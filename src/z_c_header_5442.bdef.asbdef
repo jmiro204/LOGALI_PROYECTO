@@ -1,0 +1,26 @@
+projection;
+strict ( 2 );
+use draft;
+
+define behavior for z_c_header_5442 //alias <alias_name>
+{
+  use create;
+  use update;
+  use delete;
+
+  use action Discard;
+  use action Edit;
+  use action Resume;
+  use action Prepare;
+  use action Activate;
+
+  use association _Items {  create; }
+}
+
+define behavior for z_c_items_5442 //alias <alias_name>
+{
+  use update;
+  use delete;
+
+  use association _Header;
+}

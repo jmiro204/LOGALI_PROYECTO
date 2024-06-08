@@ -1,0 +1,6 @@
+@EndUserText.label: 'SD Sales Order'
+define service Z_SD_HEADER_5442 {
+  expose z_c_header_5442;
+  expose z_c_items_5442;
+  expose z_i_status_5442;
+}
